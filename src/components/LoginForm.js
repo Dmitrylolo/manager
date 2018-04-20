@@ -26,7 +26,7 @@ class LoginForm extends Component {
 
 		return (
 		<Button onPress={this.onButtonPress.bind(this)}>
-			Login
+			Войти
 		</Button>
 		);
 	}
@@ -37,7 +37,7 @@ class LoginForm extends Component {
 				<CardSection>
 					<Input
 						label="Email"
-						placeholder="put your email"
+						placeholder="ваша@почта.com"
 						onChangeText={this.onEmailChange.bind(this)}
 						value={this.props.email}
 					/>
@@ -46,8 +46,8 @@ class LoginForm extends Component {
 				<CardSection>
 					<Input
 						secureTextEntry
-						label="Password"
-						placeholder="pass****"
+						label="Пароль"
+						placeholder="pA$$****"
 						onChangeText={this.onPasswordChange.bind(this)}
 						value={this.props.password}
 					/>

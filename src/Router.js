@@ -9,7 +9,7 @@ const RouterComponent = () => {
 	return (
 		<Router sceneStyle={{ paddingTop: 65 }}>
 			<Scene key="auth">
-				<Scene key="login" component={LoginForm} title="Please Login" />
+				<Scene key="login" component={LoginForm} title="Войти" />
 			</Scene>
 
 			<Scene key="main">
@@ -17,12 +17,12 @@ const RouterComponent = () => {
 					initial
 					key="employeeList" 
 					component={EmployeeList} 
-					title="Employees"
-					rightTitle="add"
+					title="Сотрудники"
+					rightTitle="добавить"
 					onRight={() => Actions.employeeCreate()}
 				/>
-				<Scene key="employeeCreate" title="Create Employee" component={EmployeeCreate} />
-				<Scene key="employeeEdit" title="Edit Employee" component={EmployeeEdit} />
+				<Scene key="employeeCreate" title="Создать сотрудника" component={EmployeeCreate} />
+				<Scene key="employeeEdit" title="Редактировать сотрудника" component={EmployeeEdit} />
 			</Scene>
 		</Router>
 	);

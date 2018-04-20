@@ -18,7 +18,7 @@ class EmployeeCreate extends Component {
 				<EmployeeForm {...this.props} />
 				<CardSection>
 					<Button onPress={this.onButtonPress.bind(this)}>
-					Create
+					Создать
 					</Button>
 				</CardSection>
 			</Card>

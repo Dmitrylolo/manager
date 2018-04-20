@@ -23,7 +23,7 @@ class EmployeeEdit extends Component {
 	onTextPress() {
 		const { phone, shift } = this.props;
 
-		Communications.text(phone, `your coming shift is on ${shift}`);
+		Communications.text(phone, `Ваша следующая смена в ${shift}`);
 	}
 
 	onAccept() {
@@ -40,19 +40,19 @@ class EmployeeEdit extends Component {
 				<EmployeeForm />
 				<CardSection>
 					<Button onPress={this.onButtonPress.bind(this)}>
-					Save Changes
+					Сохранить
 					</Button>
 				</CardSection>
 
 				<CardSection>
 					<Button onPress={this.onTextPress.bind(this)}>
-					Text Shelude
+					Отправить расписание
 					</Button>
 				</CardSection>
 
 				<CardSection>
 					<Button onPress={() => this.setState({ showModal: !this.state.showModal })}>
-					Delete
+					Удалить
 					</Button>
 				</CardSection>
 
@@ -61,7 +61,7 @@ class EmployeeEdit extends Component {
 					onAccept={this.onAccept.bind(this)}
 					onDecline={this.onDecline.bind(this)}
 				>
-					Are u sure u want to delete this?
+					Уверенты что хотите это сделать?
 				</Confirm>
 			</Card>
 		);
